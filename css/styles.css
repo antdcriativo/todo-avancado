@@ -38,4 +38,9 @@ button:hover>i {
 button i {
     color: #102F5e;
     font-weight: bold;
+    pointer-events: none;
+}
+
+input, select {
+    padding: .25rem;
 }
