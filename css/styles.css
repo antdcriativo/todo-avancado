@@ -49,7 +49,7 @@ input, select {
     display: none;
 }
 
-/* ToDo header*/
+/* ToDo header */
 .todo-container {
     max-width: 450px;
     margin: 3rem auto;
@@ -62,4 +62,28 @@ input, select {
     text-align: center;
     padding: 0 1rem 1rem;
     border-bottom: 1px solid #ccc;
+}
+
+/* ToDo form */
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-form p,
+#edit-form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 0.3rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
 }
