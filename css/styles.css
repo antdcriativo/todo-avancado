@@ -41,7 +41,8 @@ button i {
     pointer-events: none;
 }
 
-input, select {
+input,
+select {
     padding: 0.25rem 0.5rem;
 }
 
@@ -65,7 +66,8 @@ input, select {
 }
 
 /* ToDo form */
-#todo-form, #edit-form {
+#todo-form,
+#edit-form {
     padding: 1rem;
     border-bottom: 1px solid #ccc;
 }
