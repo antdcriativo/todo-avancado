@@ -12,5 +12,10 @@ const cancelEditBtn = document.querySelector("#cancel-edit-btn");
 todoForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    console.log("Enviou form");
+    const inputValue = todoInput.value;
+
+    if(inputValue) {
+        console.log("teste")
+        // save todo
+    }
 });
