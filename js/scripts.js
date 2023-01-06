@@ -15,7 +15,7 @@ todoForm.addEventListener("submit", (e) => {
     const inputValue = todoInput.value;
 
     if(inputValue) {
-        console.log("teste")
+        console.log(inputValue);
         // save todo
     }
 });
