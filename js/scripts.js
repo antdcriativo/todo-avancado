@@ -32,6 +32,8 @@ const saveTodo = (text) => {
     todo.appendChild(deleteBtn)
 
     todoList.appendChild(todo);
+
+    todoInput.value = "";
 };
 
 //Eventos
