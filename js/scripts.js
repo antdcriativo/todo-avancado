@@ -48,7 +48,7 @@ const toggleforms = () => {
 
 const updateTodo = (text) => {
     
-    const todos = document.querySelector("todo");
+    const todos = document.querySelector(".todo");
 
     todos.forEach(todo) => {
         let todoTitle = todo.querySelector("h3")
