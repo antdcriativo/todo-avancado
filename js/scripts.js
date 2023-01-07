@@ -44,6 +44,19 @@ const toggleforms = () => {
     editForm.classList.toggle("hide");
     todoForm.classList.toggle("hide");
     todoList.classList.toggle("hide");
+};
+
+const updateTodo = (text) => {
+    
+    const todos = document.querySelector("todo");
+
+    todos.forEach(todo) => {
+        let todoTitle = todo.querySelector("h3")
+
+        if(todoTitle.innerText === oldInputValue) {
+            todoTitle.innerText = text
+        }
+    }
 }
 
 //Eventos
@@ -96,7 +109,7 @@ editForm.addEventListener("submit", (e) => {
     const editInputValue = editInput.value
 
     if(editInputValue) {
-        updateTodo(editInputValue)
+        updateTodo(editInputValue);
     }
 
     toggleforms()
