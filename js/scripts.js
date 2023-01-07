@@ -92,7 +92,7 @@ document.addEventListener("click", (e) => {
         toggleforms()
 
         eidtInput.value = todoTitle
-        oldInputValue.value = todoTitle
+        oldInputValue = todoTitle
     }
 });
 
