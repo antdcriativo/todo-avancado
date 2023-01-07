@@ -47,17 +47,17 @@ const toggleforms = () => {
 };
 
 const updateTodo = (text) => {
-    
-    const todos = document.querySelector(".todo");
+
+    const todos = document.querySelectorAll(".todo");
 
     todos.forEach((todo) => {
         let todoTitle = todo.querySelector("h3")
 
-        if(todoTitle.innerText === oldInputValue) {
+        if (todoTitle.innerText === oldInputValue) {
             todoTitle.innerText = text
-        }
-    })
-}
+        };
+    });
+};
 
 //Eventos
 todoForm.addEventListener("submit", (e) => {
@@ -76,19 +76,19 @@ document.addEventListener("click", (e) => {
     const parentEl = targetEl.closest("div");
     let todoTitle;
 
-    if(parentEl && parentEl.querySelector("h3")) {
+    if (parentEl && parentEl.querySelector("h3")) {
         todoTitle = parentEl.querySelector("h3").innerText;
     }
 
-    if(targetEl.classList.contains("finish-todo")) {
+    if (targetEl.classList.contains("finish-todo")) {
         parentEl.classList.toggle("done");
     }
 
-    if(targetEl.classList.contains("remove-todo")) {
+    if (targetEl.classList.contains("remove-todo")) {
         parentEl.remove();
     }
 
-    if(targetEl.classList.contains("edit-todo")) {
+    if (targetEl.classList.contains("edit-todo")) {
         toggleforms()
 
         editInput.value = todoTitle
@@ -103,12 +103,12 @@ cancelEditBtn.addEventListener("click", (e) => {
 });
 
 editForm.addEventListener("submit", (e) => {
-    
+
     e.preventDefault()
 
     const editInputValue = editInput.value
 
-    if(editInputValue) {
+    if (editInputValue) {
         updateTodo(editInputValue);
     }
 
