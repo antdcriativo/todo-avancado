@@ -28,7 +28,7 @@ const saveTodo = (text) => {
 
     const deleteBtn = document.createElement("button");
     deleteBtn.classList.add("remove-todo")
-    deleteBtndeleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>'
+    deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>'
     todo.appendChild(deleteBtn)
 
     todoList.appendChild(todo);
