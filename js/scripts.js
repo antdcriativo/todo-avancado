@@ -50,13 +50,13 @@ const updateTodo = (text) => {
     
     const todos = document.querySelector(".todo");
 
-    todos.forEach(todo) => {
+    todos.forEach((todo) => {
         let todoTitle = todo.querySelector("h3")
 
         if(todoTitle.innerText === oldInputValue) {
             todoTitle.innerText = text
         }
-    }
+    })
 }
 
 //Eventos
